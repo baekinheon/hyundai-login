@@ -9,7 +9,7 @@
     window.onload = () => {
       setTimeout(() => {
         window.location.href = "login.html";
-      }, 3000);
+      }, 3000); // 3초 후 전환
     };
   </script>
   <style>
@@ -17,26 +17,15 @@
       margin: 0;
       background-color: #ffffff;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: 'Noto Sans KR', sans-serif;
     }
 
     .logo {
-      width: 100px;
+      width: 130px;
       opacity: 0;
       animation: fadeIn 1s ease-in forwards;
-    }
-
-    .loading-message {
-      margin-top: 20px;
-      font-size: 15px;
-      color: #555;
-      opacity: 0;
-      animation: fadeIn 1s ease-in forwards;
-      animation-delay: 0.5s;
     }
 
     @keyframes fadeIn {
@@ -47,7 +36,6 @@
   </style>
 </head>
 <body>
-  <img src="hyundai_logo.png" alt="Hyundai Logo" class="logo">
-  <div class="loading-message">HMC 서비스에 접속 중입니다</div>
+  <img src="hyundai_logo_192.png" alt="Hyundai Logo" class="logo">
 </body>
 </html>
